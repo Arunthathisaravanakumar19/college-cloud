@@ -1,4 +1,4 @@
-const API = "http://localhost:8090/api/students";
+const API = "https://college-cloud.onrender.com/api/students";
 
 // ================= LOAD STUDENTS =================
 
