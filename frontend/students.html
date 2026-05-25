@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cloud | Students</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #444;
+            text-align: center;
+        }
+
+        th {
+            background: rgba(255,255,255,0.1);
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="grid-3d"></div>
+
+<div class="scene">
+
+    <!-- Sidebar -->
+    <aside class="sidebar glass">
+
+        <h2>🎓 College Cloud</h2>
+        <p class="subtitle">Admin Panel</p><br>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="index.html">Dashboard</a>
+            <a href="students.html" class="active">Students</a>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content center-main">
+
+        <section class="student-wrapper">
+
+            <!-- Header -->
+            <header class="page-header">
+                <h1>Registered Students</h1><br><br>
+                <p>Manage student records securely</p><br>
+            </header>
+
+            <!-- Student Table -->
+            <div class="card glass add-student">
+
+                <button type="button" onclick="loadStudents()">
+                    Refresh Student List
+                </button>
+
+                <table class="students-table">
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentsTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

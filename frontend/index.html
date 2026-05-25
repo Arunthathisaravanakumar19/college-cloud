@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cloud Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-3d"></div>
+
+<div class="scene">
+
+    <!-- Sidebar -->
+    <aside class="sidebar glass">
+        <h2>🎓 College Cloud</h2>
+        <p class="subtitle">Admin Panel</p><br>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="students.html">Students</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content center-main">
+
+        <section class="student-wrapper">
+
+            <!-- Header -->
+            <header class="page-header">
+                <h1>Student Management</h1><br><br>
+                <p>Manage students securely in the cloud</p><br>
+            </header>
+
+            <!-- Add Student -->
+            <div class="card glass add-student">
+                <h3>Add New Student</h3><br>
+
+                <form id="addStudentForm">
+
+                    <input id="name"
+                           type="text"
+                           placeholder="Student Name"
+                           required>
+
+                    <input id="department"
+                           type="text"
+                           placeholder="Department"
+                           required>
+
+                    <input id="email"
+                           type="email"
+                           placeholder="Email Address"
+                           required>
+
+                    <button type="submit">Add Student</button>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="addStudent.js"></script>
+
+</body>
+</html>
